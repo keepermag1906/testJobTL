@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>mainPage</title>
+	<style>
+		.treeHTML details {
+		  display: block;
+		}
+		.treeHTML div {
+		  position: relative;
+		  margin: 0 0 0 .5em;
+		  padding: 0 0 0 1.2em;
+		}
+		.treeHTML summary {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  cursor: pointer;
+		}
+		.treeHTML details[open] summary {
+		  outline: none;
+		}
+	</style>
+	
+</head>
+
+
+<body>
+	
+	<div class="treeHTML">Уровни отделов компании
+	  <div>Уровень 1
+		<details><summary></summary>
+		  <div>Отдел 1
+			<details><summary></summary>
+				{% for i in d1 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 2
+			<details><summary></summary>
+				{% for i in d2 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 3
+			<details><summary></summary>
+				{% for i in d3 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 4
+			<details><summary></summary>
+				{% for i in d4 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 5
+			<details><summary></summary>
+				{% for i in d5 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		</details>
+	  </div>
+	  <div>Уровень 2
+		<details><summary></summary>
+		  <div>Отдел 6
+			<details><summary></summary>
+				{% for i in d6 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 7
+			<details><summary></summary>
+				{% for i in d7 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 8
+			<details><summary></summary>
+				{% for i in d8 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 9
+			<details><summary></summary>
+				{% for i in d9 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 10
+			<details><summary></summary>
+				{% for i in d10 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		</details>
+	  </div>
+	  <div>Уровень 3
+		<details><summary></summary>
+		  <div>Отдел 11
+			<details><summary></summary>
+				{% for i in d11 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 12
+			<details><summary></summary>
+				{% for i in d12 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 13
+			<details><summary></summary>
+				{% for i in d13 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 14
+			<details><summary></summary>
+				{% for i in d14 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 15
+			<details><summary></summary>
+				{% for i in d15 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		</details>
+	  </div>
+	  <div>Уровень 4
+		<details><summary></summary>
+		  <div>Отдел 16
+			<details><summary></summary>
+				{% for i in d16 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 17
+			<details><summary></summary>
+				{% for i in d17 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 18
+			<details><summary></summary>
+				{% for i in d18 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 19
+			<details><summary></summary>
+				{% for i in d19 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 20
+			<details><summary></summary>
+				{% for i in d20 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		</details>
+	  </div>
+	  <div>Уровень 5
+		<details><summary></summary>
+		  <div>Отдел 21
+			<details><summary></summary>
+				{% for i in d21 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 22
+			<details><summary></summary>
+				{% for i in d22 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 23
+			<details><summary></summary>
+				{% for i in d23 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 24
+			<details><summary></summary>
+				{% for i in d24 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		  <div>Отдел 25
+			<details><summary></summary>
+				{% for i in d25 %}
+					<div><span style="font-weight:600">{{i.fullname}}</span>, <span><i>{{i.position}}, {{i.wages}} руб., принят: {{i.date_of_employment}}</i></span></div>
+				{% endfor %}
+			</details>
+		  </div>
+		</details>
+	  </div>
+	</div>
+	
+	
+</body>
+
